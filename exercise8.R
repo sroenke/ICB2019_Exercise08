@@ -26,7 +26,7 @@ UWtime<-0
 i=0
 #Creating a vector for UW's time at which points are scored
 for(i in 1:23){
-  UWtime<<-append(UWtime,UWpts$time[i]+UWtime[i],after = 0)
+  UWtime<<-append(UWtime,UWpts$time[i],after = 0)
 }
 UWtimeR<-UWtime[24:1]
 #Creating a matrix for UW's time + points scored
@@ -38,7 +38,7 @@ MSUtime<-0
 i=0
 for(i in 1:27){
   #Creating a vector for MSU's time at which points are scored
-  MSUtime<<-append(MSUtime,MSUpts$time[i]+MSUtime[i],after = 0)
+  MSUtime<<-append(MSUtime,MSUpts$time[i],after = 0)
 }
 MSUtimeR<-MSUtime[28:1]
 #Creating a matrix for MSU's time + points scored
