@@ -1,7 +1,6 @@
 #part1
 #to sort by team:
 UWpts<-subset(UWvMSU_1_22_13_txt,UWvMSU_1_22_13_txt$team == "UW")
-help(subset)
 MSUpts<-subset(UWvMSU_1_22_13_txt,UWvMSU_1_22_13_txt$team == "MSU")
 
 #creating a vector for *MSU's point tally*
